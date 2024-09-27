@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">testelogin</string>
+    <string name="edit_username">Usuário</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_password">Senha</string>
+    <string name="button_entrar">entrar</string>
+    <string name="button_cadastrar">Cadastrar</string>
+    <string name="bt_entrar">Entrar</string>
+    <string name="text_ou">ou</string>
+    <string name="text_tela_cadastro">Cadastre Aqui</string>
+</resources>
