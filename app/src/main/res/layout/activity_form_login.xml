@@ -10,12 +10,12 @@
     tools:context=".FormLogin">
 
     <EditText
-        android:id="@+id/edit_nome"
+        android:id="@+id/edit_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"
-        android:hint="@string/edit_username"
-        android:inputType="textPersonName"
+        android:hint="@string/edit_email"
+        android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="176dp" />
 

@@ -13,11 +13,9 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.firestore.FirebaseFirestore
-import java.util.HashMap;
-
-//import java.util.logging.Handler;
 
 public class FormCadastro : AppCompatActivity() {
+
     private lateinit var editNome: EditText
     private lateinit var editEmail: EditText
     private lateinit var editSenha: EditText
