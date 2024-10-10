@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1025172601534",
-    "project_id": "recreio-1585b",
-    "storage_bucket": "recreio-1585b.appspot.com"
+    "project_number": "1029250521626",
+    "project_id": "projetodeestudo-909f6",
+    "storage_bucket": "projetodeestudo-909f6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1025172601534:android:c8503b7054d6a5774e3cef",
+        "mobilesdk_app_id": "1:1029250521626:android:b889d8318c7fe79d868fa3",
         "android_client_info": {
           "package_name": "com.example.comocomecaloginkotlin"
         }
@@ -15,26 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAVBG4EwX7vWErVCQWYNhq9DaniowXmGR8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1025172601534:android:cbe56a316fcf74754e3cef",
-        "android_client_info": {
-          "package_name": "com.example.recreio"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAVBG4EwX7vWErVCQWYNhq9DaniowXmGR8"
+          "current_key": "AIzaSyAPedPtDDowo1o1qJAf82tPOLy3lnSAM90"
         }
       ],
       "services": {

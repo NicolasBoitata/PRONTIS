@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-<!--   application -> android:theme="@style/Theme.AppCompat.Light.DarkActionBar"-->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,22 +13,40 @@
         android:theme="@style/Theme.ComoComecaLoginKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".LoginJava"
             android:exported="false" />
         <activity
+            android:name=".ValidacaoSignin"
+            android:exported="false" />
+        <activity
+            android:name=".ValidacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginEmails"
+            android:exported="false" />
+        <activity
+            android:name=".DistintoLogin"
+            android:exported="false" />
+        <activity
+            android:name=".TelaSecundario"
+            android:exported="false" />
+        <activity
             android:name=".FormCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".FormLogin"
             android:exported="false" />
         <activity
             android:name=".TelaPrincipal"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".FormLogin"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

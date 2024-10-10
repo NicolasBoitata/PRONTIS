@@ -30,10 +30,12 @@ android {
     }
     compileOptions {
 //        sourceCompatibility = VERSION_1_8
-//        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+//        jvmTarget = "1.8"
+        jvmTarget = "21"
     }
     viewBinding{
         enable = true
@@ -52,7 +54,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+
     implementation("com.google.firebase:firebase-analytics")
 
 //    implementation("com.google.firebase:firebase.auth-ktx")

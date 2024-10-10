@@ -14,11 +14,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
-
 public class FormLogin : AppCompatActivity() {
 
     private lateinit var textTelaCadastro: TextView
-  //  private lateinit var editNome: EditText
     private lateinit var editEmail: EditText
     private lateinit var editSenha: EditText
     private lateinit var btEntrar: Button
@@ -26,7 +24,7 @@ public class FormLogin : AppCompatActivity() {
     private val mensagens = arrayOf("preencha todos os campos", "Login Efetuado com Sucesso")
 //    var MAIN_THREAD_HANDLER: Handler? = null
 //    private var Handler MAIN_THREAD_HANDLER = null;
-
+//
 //    private lateinit var googleSignInClient: GoogleSignInAccount
 
     val handler = Handler(Looper.getMainLooper())
@@ -62,7 +60,6 @@ public class FormLogin : AppCompatActivity() {
         }
     }
 
-
     private fun autenticarUsuario(view: View) {
         val email = editEmail.text.toString()
         val senha = editSenha.text.toString()
@@ -89,24 +86,6 @@ public class FormLogin : AppCompatActivity() {
                 }
             }
     }
-
-
-
-
-    override fun onStart() {
-        super.onStart()
-
-        val usuarioAtual = FirebaseAuth.getInstance().currentUser
-
-        if (usuarioAtual != null) {
-            telaPrincipal()
-        }
-    }
-
-
-
-
-
 //    @Override
 //    protected void onStart() {
 //        super.onStart();
@@ -119,7 +98,7 @@ public class FormLogin : AppCompatActivity() {
 //    }
 
         private fun telaPrincipal() {
-        val intent = Intent(this, TelaPrincipal::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

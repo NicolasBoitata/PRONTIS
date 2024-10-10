@@ -1,7 +1,10 @@
 package com.example.comocomecaloginkotlin;
 
+import android.content.Intent
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler
+import android.os.Looper
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,9 +16,11 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.HashMap;
+
+//import java.util.logging.Handler;
 
 public class FormCadastro : AppCompatActivity() {
-
     private lateinit var editNome: EditText
     private lateinit var editEmail: EditText
     private lateinit var editSenha: EditText
@@ -53,6 +58,11 @@ public class FormCadastro : AppCompatActivity() {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, senha)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
+
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        IrParaLa()
+                    }, 1500)
+
                     salvarDadosUsuario()
                     val snackbar = Snackbar.make(view, mensagens[1], Snackbar.LENGTH_SHORT)
                     snackbar.setBackgroundTint(Color.WHITE)
@@ -77,6 +87,12 @@ public class FormCadastro : AppCompatActivity() {
                     snackbar.show()
                 }
             }
+    }
+
+    private fun IrParaLa() {
+        val intent = Intent(this, FormLogin::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun salvarDadosUsuario() {

@@ -17,8 +17,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-//https://www.youtube.com/shorts/L1Xpaozbtpg
-
 public class LoginJava extends AppCompatActivity {
 
     private TextView text_tela_cadastro;
@@ -115,9 +113,6 @@ public class LoginJava extends AppCompatActivity {
     }
 }
 
-        // Verifica se a ActionBar existe e a esconde
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar().hide();
 
 
 //        IniciarComponentes();
