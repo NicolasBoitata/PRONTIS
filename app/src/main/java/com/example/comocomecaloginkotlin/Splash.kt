@@ -25,7 +25,7 @@ class Splash : AppCompatActivity() {
         timer.schedule(timerTask, 1000)
     }
     private fun gotoMainActivity() {
-        val intent = Intent(applicationContext, ValidacaoSignin::class.java)
+        val intent = Intent(applicationContext, LoginEmails::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
         finish()

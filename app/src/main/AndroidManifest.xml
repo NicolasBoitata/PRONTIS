@@ -22,12 +22,6 @@
             android:name=".LoginJava"
             android:exported="false" />
         <activity
-            android:name=".ValidacaoSignin"
-            android:exported="false" />
-        <activity
-            android:name=".ValidacaoActivity"
-            android:exported="false" />
-        <activity
             android:name=".LoginEmails"
             android:exported="false" />
         <activity

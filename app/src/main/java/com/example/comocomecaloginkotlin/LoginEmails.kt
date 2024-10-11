@@ -45,9 +45,9 @@ class LoginEmails : AppCompatActivity() {
     private fun classifyUserByEmailDomain(email: String) {
         val domain = email.substringAfter("@")
 
-        if (domain == "adm.com") {
+        if (domain == "merenda.com") {
             // Direcionar para a tela de Admin
-            Toast.makeText(this, "Bem-vindo, Administrador!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Bem-vindo, Administração!", Toast.LENGTH_SHORT).show()
             // startActivity(Intent(this, AdminActivity::class.java))
             val intent = Intent(
                 applicationContext,
@@ -56,7 +56,7 @@ class LoginEmails : AppCompatActivity() {
             startActivity(intent)
         } else {
             // Direcionar para a tela de Usuário Comum
-            Toast.makeText(this, "Bem-vindo, Usuário!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Bem-vindo, Aluno!", Toast.LENGTH_SHORT).show()
             // startActivity(Intent(this, UserActivity::class.java))
             val intent = Intent(
                 applicationContext,
